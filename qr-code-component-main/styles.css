@@ -66,3 +66,13 @@ body {
     word-spacing: 1px;
     margin: 0;
 }
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    position: sticky;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
