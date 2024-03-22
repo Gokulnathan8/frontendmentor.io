@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --darkRaspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --roseWhite: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --lightGrey: hsl(30, 18%, 87%);
+    --wengeBrown: hsl(30, 10%, 34%);
+    --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: var(--eggshell);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 4rem auto;
+    background-color: var(--white);
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 1.5rem;
+}
+
+main h1,
+main h2,
+main h3 {
+    font-family: 'Young Serif', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--nutmeg);
+    font-weight: 400;
+}
+
+main h1 {
+    color: var(--darkCharcoal);
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+
+main p,
+main li,
+main th,
+main td {
+    font-family: 'Outfit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--wengeBrown);
+}
+
+main li,
+main th,
+td {
+    margin: 10px;
+}
+
+main img {
+    border-radius: 6px;
+}
+
+.main-prep {
+    background-color: var(--roseWhite);
+    padding: 10px 2rem;
+    margin: 10px 0px;
+    border-radius: 16px;
+}
+
+
+.main-prep h3 {
+    font-family: 'Outfit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    color: var(--darkRaspberry);
+}
+
+ul,
+ol {
+    position: relative;
+    left: -30px;
+    width: 42rem;
+}
+
+ul li::marker,
+ol li::marker {
+    color: var(--nutmeg);
+    font-weight: 600;
+}
+
+.main-prep li::marker {
+    color: var(--darkRaspberry);
+}
+
+.main-prep strong {
+    font-weight: 700;
+}
+
+hr {
+    border-top: 1px solid var(--lightGrey);
+    height: 1px;
+    width: 39rem;
+}
+
+li:before {
+    content: "";
+    margin-left: 1rem;
+}
+
+.main-instructions ol li, ul li {
+    text-align: justify;
+    text-indent: -1em;
+    padding-left: 1em;
+    line-height: 1.5;
+}
+
+table {
+    padding: 1rem;
+    text-align: left;
+}
+
+table th {
+    position: relative;
+    left: 1.5rem;
+}
+
+th,
+td {
+    border-bottom: 1px solid var(--lightGrey);
+    border-collapse: collapse !important;
+    padding: 10px 20px;
+}
+
+.nutrival {
+    color: var(--nutmeg);
+    font-weight: 700;
+}
+
+tr:last-child td,
+tr:last-child th {
+    border: none;
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    position: sticky;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 426px) {
+    main{
+        margin: auto;
+        width: auto;
+        border-radius: 0;
+    }
+    main img{
+        border-radius: 0;
+        transform: scale(1.2);
+        position: relative;
+        top: -10px;
+        margin-bottom: 1rem;
+    }
+    main h1{
+        font-size: 32px;
+        line-height: 1;
+    }
+    ul,ol{
+        width: auto;
+    }
+    main li{
+        text-indent: -15px;
+    }
+}
