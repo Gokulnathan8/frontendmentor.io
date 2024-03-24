@@ -40,6 +40,8 @@ main {
 
 .illustration img {
     width: 330px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -117,7 +119,7 @@ footer a {
     main {
         margin: auto 1rem;
         width: 20rem;
-        height: 27.5rem;
+        height: 30.5rem;
     }
 
     .illustration img{
