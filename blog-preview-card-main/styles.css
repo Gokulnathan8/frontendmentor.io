@@ -78,6 +78,7 @@ main {
 
 .main-content h1:hover{
     color: var(--yellow);
+    cursor: pointer;
 }
 
 .main-content p {
