@@ -25,10 +25,10 @@ body {
 
 main {
     background-color: var(--white);
-    border: 2px solid var(--black);
+    border: 1px solid var(--black);
     border-radius: 20px;
     margin: auto;
-    height: 30.5rem;
+    height: 31.5rem;
     width: 23rem;
     box-shadow: 9px 9px 1px 0px var(--black);
     padding: 0;
@@ -81,6 +81,7 @@ main {
 .main-content p {
     font-weight: 500;
     color: var(--grey);
+    line-height: 1.5rem;
 }
 
 .poster-info {
