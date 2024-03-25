@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('assets/fonts/WorkSans-VariableFont_wght.ttf'),
+        url('assets/fonts/WorkSans-Italic-VariableFont_wght.ttf');
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --lightPink: hsl(275, 100%, 97%);
+    --grayishPurple: hsl(292, 16%, 49%);
+    --darkPurple: hsl(292, 42%, 14%);
+    --purple: rgb(173 40 235);
+    --gray: #fafafa;
+    --fontFam: 'Work Sans', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: var(--fontFam);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--lightPink);
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main {
+    position: relative;
+    background-color: var(--white);
+    margin: auto;
+    width: 30rem;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.faq-heading {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem auto;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.faq-heading h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.faq-accordion {
+    margin: auto 1rem;
+    border-bottom: 2px solid var(--gray);
+}
+
+.faq-accordion:last-child {
+    border-bottom: none;
+}
+
+.faq-accordion-display {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem auto;
+}
+
+.faq-accordion:last-child .faq-accordion-display,
+.faq-accordion:last-child {
+    margin-bottom: 0;
+}
+
+.faq-accordion-display-btn{
+    display: flex;
+    padding: 1rem 0;
+    width: 14rem;
+    border: none;
+    background-color: transparent;
+    transition: 0.2s ease all;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    width: 26rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-accordion-display-btn:hover {
+    color: var(--purple);
+    cursor: pointer;
+}
+
+#icon-minus{
+    display: none;
+}
+
+.faq-accordion-content {
+    display: none;
+    font-size: 14px;
+    color: var(--grayishPurple);
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    bottom: 1rem;
+}
+
+footer a {
+    color: rgb(62, 82, 163);
+}
+
+@media screen and (max-width: 426px) {
+    body {
+        background-image: url('assets/images/background-pattern-mobile.svg');
+    }
+
+    main {
+        width: 20rem;
+    }
+
+    .faq-heading h1 {
+        font-size: 30px;
+    }
+
+    .faq-heading {
+        margin-bottom: 1rem;
+    }
+}
